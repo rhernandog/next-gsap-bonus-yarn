@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { gsap } from 'gsap/dist/gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { ScrollSmoother } from "gsap/dist/ScrollSmoother";
 
 import styles from '../styles/Home.module.css'
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 export default function Home() {
   return (
